@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Blog post template
+# key: blog-post
+# --
+title: ${1:Title}
+slug: ${2:url}
+tags: ${3:tags}
+category: ${4:category}
+date: ${5:date}
+

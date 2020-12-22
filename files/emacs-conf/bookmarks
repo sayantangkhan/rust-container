@@ -1,0 +1,50 @@
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("Research"
+ (filename . "~/graduate-work/research-related/")
+ (front-context-string . "Patterson-Sulliv")
+ (rear-context-string . "96 Aug 10 11:12 ")
+ (position . 646))
+("Graduate work"
+ (filename . "~/graduate-work/current_semester/")
+ (front-context-string . "  drwxr-xr-x 7 s")
+ (rear-context-string . " Sep  6 11:03 .\n")
+ (position . 149))
+("Teaching"
+ (filename . "~/teaching/current_semester/")
+ (front-context-string)
+ (rear-context-string . "96 Sep  4 19:07 ")
+ (position . 248))
+("org-capture-last-stored-marker"
+ (filename . "~/OrgMode/links.org")
+ (front-context-string . "** BOFH archives")
+ (rear-context-string . "ellaneous links\n")
+ (position . 5725))
+("org-refile-last-stored"
+ (filename . "~/OrgMode/links.org")
+ (front-context-string . "*** Scheme lexer")
+ (rear-context-string . "rized computing\n")
+ (position . 1249))
+("org-capture-last-stored"
+ (filename . "~/OrgMode/links.org")
+ (front-context-string . "** BOFH archives")
+ (rear-context-string . "tegorized links\n")
+ (position . 6053))
+("links.org"
+ (filename . "~/OrgMode/links.org")
+ (front-context-string . "w\n#+TITLE: Colle")
+ (rear-context-string . "STARTUP: overvie")
+ (position . 37))
+("notes.org"
+ (filename . "~/OrgMode/notes.org")
+ (front-context-string)
+ (rear-context-string . "ection of notes\n")
+ (position . 68))
+("emacs.d"
+ (filename . "~/.emacs.d/")
+ (front-context-string . "auto-save-list\n ")
+ (rear-context-string . "96 May 30 11:26 ")
+ (position . 241))
+)

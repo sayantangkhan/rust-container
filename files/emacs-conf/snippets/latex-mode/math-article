@@ -1,0 +1,59 @@
+# -*- mode: snippet -*-
+# name: Math article template
+# key: math-article
+# --
+\documentclass[12pt, notitlepage]{article}
+\usepackage[utf8]{inputenc}
+
+% \usepackage[nottoc]{tocbibind}
+\usepackage{datetime}
+\usepackage{graphicx}
+\usepackage[nointegrals]{wasysym}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{enumerate}
+
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+% \usepackage{thm-autoref}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}
+
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+
+\usepackage[left=3.5cm,right=3.5cm,top=2cm,bottom=2cm]{geometry}
+
+\usepackage{gentium}
+\usepackage[euler-digits,small]{eulervm}
+\usepackage{enumerate}
+
+\title{${1:Title}}
+\author{${2:Sayantan Khan} \\\\ ${3:\texttt{sayantangkhan@gmail.com}} \\\\ ${4:University of Michigan}}
+\date{${5:\today}}
+
+% Custom commands
+
+\makeatletter
+
+\makeatother
+
+\begin{document}
+\maketitle
+
+% \tableofcontents{}
+
+$0
+
+\end{document}
