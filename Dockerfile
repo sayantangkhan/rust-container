@@ -17,10 +17,10 @@ RUN apt-get update && \
     pkgconf \
     software-properties-common
 
-# Install neovim
-RUN sudo add-apt-repository ppa:neovim-ppa/unstable && \
-    sudo apt-get update && \
-    sudo apt-get install neovim -y
+# Installing Emacs 27
+RUN add-apt-repository ppa:kelleyk/emacs && \
+    apt-get update && \
+    apt-get install -y emacs27-nox
 
 # Creating a regular user
 ARG user=rust-dev
@@ -56,18 +56,3 @@ ARG realemail=sayantangkhan@gmail.com
 RUN git config --global user.name "$realname" && \
     git config --global user.email "$realemail"
 
-# Create configuration directory for neovim
-RUN mkdir -p "$HOME/.config/nvim"
-
-# Copy our configuration
-ADD files/nvim/init.vim /home/$user/.config/nvim/init.vim
-USER root
-RUN chown $user:$user /home/$user/.config/nvim/init.vim
-USER $user
-
-# Install vim-plug, our plugin manager
-RUN curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-# Install all of our plugins
-RUN nvim +PlugInstall +qall
