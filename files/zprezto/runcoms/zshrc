@@ -81,3 +81,5 @@ _watson_completion() {
 }
 
 compdef _watson_completion watson;
+
+alias ec="emacsclient -a '' -c"

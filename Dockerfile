@@ -51,8 +51,8 @@ RUN chown -R $user:$user /home/$user/files
 USER $user
 
 RUN rm .zshenv && \
-    mv files/tmux.conf ~/.tmux.conf && \
-    mv files/zprezto ~/.zprezto && \
+    mv files/tmux.conf /home/$user/.tmux.conf && \
+    mv files/zprezto /home/$user/.zprezto && \
     ln -sv /home/$user/.zprezto/runcoms/zlogin ~/.zlogin && \
     ln -sv /home/$user/.zprezto/runcoms/zlogout ~/.zlogout && \
     ln -sv /home/$user/.zprezto/runcoms/zpreztorc ~/.zpreztorc && \
@@ -64,3 +64,6 @@ RUN rm .zshenv && \
     ~/.cask/bin/cask install
 
 ENV TERM=screen-256color
+
+RUN mkdir /home/$user/project-directory
+WORKDIR /home/$user/project-directory
