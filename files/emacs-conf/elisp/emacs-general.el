@@ -8,7 +8,7 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ; scroll bar disable
-(scroll-bar-mode -1)
+; (scroll-bar-mode -1)
 
 ;; Disabling the menu bar
 (menu-bar-mode -1)

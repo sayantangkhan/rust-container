@@ -1,7 +1,9 @@
 ; Temporary workaround
 (setq warning-minimum-level :emergency)
 
-(require `cask "/home/sayantan/.cask/cask.el")
+(setq cask-path (concat "/home/" (user-login-name) "/.cask/cask.el"))
+
+(require `cask cask-path)
 (cask-initialize)
 
 (require 'pallet)
@@ -9,7 +11,7 @@
 
 ;; inhibit-startup-echo-area-message MUST be set to a hardcoded
 ;; string of your login name
-(setq inhibit-startup-echo-area-message "sayantan")
+(setq inhibit-startup-echo-area-message (user-login-name))
 (setq inhibit-startup-message t)
 
 ;; Package config files
@@ -40,7 +42,6 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#272822" "#F92672" "#A6E22E" "#E6DB74" "#66D9EF" "#FD5FF0" "#A1EFE4" "#F8F8F2"])
- '(blacken-executable "/home/sayantan/.emacs.d/elpy/rpc-venv/bin/black")
  '(column-number-mode t)
  '(compilation-message-face (quote default))
  '(custom-safe-themes
