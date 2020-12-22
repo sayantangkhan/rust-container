@@ -7,5 +7,9 @@ command. The following command binds the local \<project-directory\> folder to t
 
   docker run -v \<project-directory\>:/home/rust-dev/project-directory --rm -ti \<container-id\> tmux
 
-You may need to change the UID of the process based on the permissions of your project directory and your own UID.
+You may need to change the UID of the process based on the permissions of your project directory and your own UID. Here's an example of what that
+would look like.
+
+  docker run -it --user=1000:$(id -g) --group-add rust-dev -v \<project-directory\>:/home/rust-dev/project-directory \<container-id\>
+
 To run this container with podman, you need to run it with the `--privileged` flag to enable write access on the notebook directory.

@@ -65,5 +65,8 @@ RUN rm .zshenv && \
 
 ENV TERM=screen-256color
 
+ADD entrypoint-script.sh /tmp/entrypoint-script.sh
+
 RUN mkdir /home/$user/project-directory
 WORKDIR /home/$user/project-directory
+ENTRYPOINT bash /tmp/entrypoint-script.sh
