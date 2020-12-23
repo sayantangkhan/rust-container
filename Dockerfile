@@ -16,7 +16,8 @@ RUN apt-get update && \
     tmux \
     pkgconf \
     software-properties-common \
-    python-is-python3
+    python-is-python3 \
+    ispell
 
 # Installing Emacs 27
 RUN add-apt-repository ppa:kelleyk/emacs && \
