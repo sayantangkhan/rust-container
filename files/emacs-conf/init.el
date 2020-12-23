@@ -18,22 +18,15 @@
 
 (add-to-list 'load-path "~/.emacs.d/elisp/")
 (load-library "emacs-general")
-;; (load-library "misc")
-;; (load-library "dashboard-conf")
-(load-library "yasnippet-conf")
-(load-library "neotree-conf")
 (load-library "evil-mode-conf")
-(load-library "ibuffer-conf")
 (load-library "helm-conf")
-(load-library "org-mode-conf")
-(load-library "markdown-mode-conf")
-;; (load-library "auctex-conf")
+(load-library "ibuffer-conf")
 (load-library "magit-conf")
-;; (load-library "python-mode-conf")
-(load-library "smartparens-conf")
+(load-library "markdown-mode-conf")
+(load-library "neotree-conf")
 (load-library "simple-rust-mode-conf")
-;; (load-library "rust-mode-conf")
-;; (load-library "fzf-conf")
+(load-library "smartparens-conf")
+(load-library "yasnippet-conf")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -47,7 +40,6 @@
  '(custom-safe-themes
    (quote
     ("bae098b53639a4478089251b6a1c8fcb86e5f6ba41ac3d6b79c0ce54812b8a90" "c9ddf33b383e74dac7690255dd2c3dfa1961a8e8a1d20e401c6572febef61045" "36ca8f60565af20ef4f30783aa16a26d96c02df7b4e54e9900a5138fb33808da" "bf798e9e8ff00d4bf2512597f36e5a135ce48e477ce88a0764cfb5d8104e8163" "a2cde79e4cc8dc9a03e7d9a42fabf8928720d420034b66aecc5b665bbf05d4e9" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" default)))
- '(ein:polymode t)
  '(fci-rule-color "#3C3D37")
  '(fill-column 110)
  '(flycheck-check-syntax-automatically (quote (save idle-change mode-enabled)))
@@ -72,7 +64,6 @@
  '(org-export-html-postamble nil)
  '(org-hide-leading-stars t)
  '(org-noter-auto-save-last-location t)
- '(org-noter-notes-search-path (quote ("~/OrgMode/math/")))
  '(org-startup-folded (quote overview))
  '(org-startup-indented t)
  '(org-startup-truncated nil)

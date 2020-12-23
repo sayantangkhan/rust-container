@@ -10,3 +10,13 @@
 	  (lambda () (setq indent-tabs-mode nil)))
 
 (setq rust-format-on-save t)
+
+(require 'separedit)
+
+;; Key binding for modes you want edit
+;; or simply bind ‘global-map’ for all.
+(define-key rust-mode-map        (kbd "C-c '") #'separedit)
+
+;; Default major-mode for edit buffer
+;; can also be other mode e.g. ‘org-mode’.
+(setq separedit-default-mode 'markdown-mode)
